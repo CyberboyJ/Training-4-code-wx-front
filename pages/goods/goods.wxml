@@ -1,0 +1,15 @@
+<!--pages/goods/goods.wxml-->
+<view class="container page">
+<!-- <text>
+  商品详情{{goodsId}}
+</text> -->
+<!-- <view>  {{goods.goodsId}}</view> -->
+<view> <image class="mainImg" src="{{goods.goodsImg}}"></image>  </view>
+<view class="price">  ￥{{goods.goodsPrice}}</view>
+<view class="goodsTitle">  {{goods.goodsName}}</view>
+
+<view class="desc">  {{goods.goodsExplain}}</view>
+
+<button bind:tap="toBack" > 返回</button>
+<button bind:tap="toCart" > 加入购物车</button>
+</view>
