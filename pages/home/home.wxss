@@ -1,0 +1,81 @@
+/* pages/home/home.wxss */
+.page {
+  align-items: flex-start;
+}
+.goodsTypes{
+  flex:1;
+  /* background-color: aqua; */
+  /* height: 300vw; */
+  height: 70vh;
+  
+}
+.goodsTypes .item{
+  height: 18vw;
+  line-height: 18vw;
+  color: #999999;
+  display: flex;
+  width: 20vw;
+}
+
+.goodsTypes .item-text{
+  width:  90%;
+  text-align: center;
+}
+
+.goodsTypes  .item-active{
+  width: 0.8vw;
+  height: 4vw;
+  margin-top: 7vw;
+  background-color: coral;
+}
+
+.goodsList{
+  flex: 2.5;
+  height: 100vh;
+}
+
+.goodsList .title{
+  height: 10vw;
+  line-height:10vw;
+  /* background-color: blueviolet; */
+  padding-left:2vw;
+  
+  display:flex;
+  flex-direction: column;
+}
+.goodsList .typeImg{
+    display: flex;
+    height: 30vw;
+    width: 95%;
+}
+.goodsList .goods-item{
+  width: 90%;
+	height: 25vw;
+	background-color: #f7f7f7;
+	margin-bottom: 1vw;
+	border-radius: 1vw;
+  display: flex;
+  align-items: center;
+}
+.goods-item .goods-img{
+  width: 95%;
+  height: 20vw;
+  border-radius: 5px;
+}
+.goods-img image{
+  width: 20vw;
+  height: 14vw;
+  padding: 2vw 2vw;
+}
+.goods-item .goods-desc{
+  width: 100%;
+  padding:2vw 5vw;
+  line-height: 8vw;
+}
+.goods-item  .goods-desc text{
+  width: 100%;
+  line-height: 15vw;
+  white-space: nowrap;      /* 保持文本在一行内显示 */
+  overflow: hidden;         /* 超出容器部分隐藏 */
+  text-overflow: ellipsis;  /* 使用省略号表示文本被截断 */
+}

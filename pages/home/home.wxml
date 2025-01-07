@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+<view class="container page" >
+  <!-- 商品分类 start -->
+  <scroll-view type="list" scroll-y="true" class="goodsTypes">
+    <view wx:for="{{goodsTypes}}" class="item"  data-tid="{{item.goodsTypeId}}" 
+      bind:tap="changeType" >
+      <view class="item-active" wx:if="{{item.goodsTypeId==currentGoodsType.goodsTypeId}}"></view>
+      <view class="item-text">{{item.goodsTypeName}}</view>
+    </view>  
+  </scroll-view>
+  <!-- 商品分类 end -->
+
+
+  <!-- 商品列表 start -->
+  <scroll-view type="list" scroll-y="true"  class="goodsList">
+      <image class="typeImg" src="{{currentGoodsTypeImg}}"></image>
+      <view class="title">{{currentGoodsType.goodsTypeName}}</view>
+      <view class="goods-item" wx:for="{{currentGoodsList}}"
+          data-gid="{{item.goodsId}}"  bind:tap="toGoods">
+        <view class="goods-img">
+          <image src="{{item.goodsImg}}"></image>
+        </view>
+        <view class="goods-desc">
+            <view>{{item.goodsName}}</view>
+            <view>￥{{item.goodsPrice}}</view>
+        </view>
+      </view>
+
+  </scroll-view>
+  <!-- 商品列表 end -->
+
+</view>

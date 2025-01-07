@@ -1,0 +1,7 @@
+<!--pages/cart/cart.wxml-->
+
+<!-- <view> <image class="mainImg" src="{{goods.goodsImg}}"></image>  </view> -->
+<!-- <div style="width: 100%; height: 13.9vw; background-color: black;"></div> -->
+<view class="container page">
+  <image class="cart-null" src="../../public/cartnull.png" style="width: 100%; height: 90%;"></image>
+</view>

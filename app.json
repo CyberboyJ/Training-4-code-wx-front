@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goods/goods",
+    "pages/cart/cart"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小米商城",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "public/imgs/icon_black/shouye.png",
+        "selectedIconPath": "public/imgs/icon_blue/shouye.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "public/imgs/icon_black/gouwuchekong.png",
+        "selectedIconPath": "public/imgs/icon_blue/gouwuchekong.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "登录",
+        "iconPath": "public/imgs/icon_black/yonghu.png",
+        "selectedIconPath": "public/imgs/icon_blue/yonghu.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
