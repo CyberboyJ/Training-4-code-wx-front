@@ -1,0 +1,15 @@
+<!--pages/user/user.wxml-->
+<view wx:if="{{!isLogin}}" class="container page" >
+  <text>登录界面</text>
+  <view>
+    <button open-type="getUserInfo" bindgetuserinfo="getMyUserInfo">获取微信用户信息</button>
+
+    <button open-type="getPhoneNumber" bindgetphonenumber="getUserPhone">获取微信用户手机授权</button>
+  </view> 
+</view>
+<view  wx:if="{{isLogin}}"  class="container page">
+  <text>用户信息</text>
+  <view>{{userInfo.customerName}}</view>
+  <view>{{userInfo.telId}}</view>
+  <button bind:tap="logOut">退出登录</button>
+</view>

@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/goods/goods",
-    "pages/cart/cart"
+    "pages/cart/cart",
+    "pages/user/user"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -27,7 +28,7 @@
         "selectedIconPath": "public/imgs/icon_blue/gouwuchekong.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/user/user",
         "text": "登录",
         "iconPath": "public/imgs/icon_black/yonghu.png",
         "selectedIconPath": "public/imgs/icon_blue/yonghu.png"
